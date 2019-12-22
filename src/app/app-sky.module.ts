@@ -19,6 +19,10 @@ import {
   SkyNavbarModule
 } from '@skyux/navbar';
 
+import{
+  DataService
+} from './data/data.service';
+
 @NgModule({
   exports: [
     SkyAvatarModule,
@@ -26,6 +30,11 @@ import {
     SkyKeyInfoModule,
     SkyFluidGridModule,
     SkyNavbarModule
+  ],
+  imports: [
+  ],
+  providers: [
+    DataService
   ]
 })
 export class AppSkyModule { }
